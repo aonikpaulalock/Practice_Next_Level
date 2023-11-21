@@ -5,6 +5,7 @@ const router = express.Router();
 
 router
   .get("/:userId", StudentController.GetSingleStudentIntoDB)
+  .delete("/:userId", StudentController.GetDeleteStudentIntoDB)
   .get("/", StudentController.GetAllStudentIntoDB)
   .post("/create-student", StudentController.createStudentIntoDB)
 
